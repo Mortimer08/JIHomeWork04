@@ -8,29 +8,28 @@ package Task02;
 import java.util.LinkedList;
 
 public class MyQueue {
-    LinkedList <Integer> myLinkedList;
-
-    // int length;
+    LinkedList<Integer> myLinkedList;
 
     MyQueue() {
         myLinkedList = new LinkedList<>();
-        // length = myLinkedList.size();
     }
 
     void enqueue(Integer elem) {
         myLinkedList.add(elem);
     }
-    Integer dequeue(){
-        if (myLinkedList.size()!=0) {
+
+    Integer dequeue() {
+        if (myLinkedList.size() != 0) {
             return myLinkedList.pop();
         }
         return null;
     }
+
     Integer first() {
-        if(myLinkedList.size()!=0){
-        return myLinkedList.getFirst();
+        if (myLinkedList.size() != 0) {
+            return myLinkedList.getFirst();
         }
         return null;
     }
-    
+
 }
